@@ -2,56 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 12px;
+:root {
+  --background: #0B1020;
+  --foreground: #F8F8F8;
 }
 
-::-webkit-scrollbar-track {
-  background: #0F172A;
+* {
+  box-sizing: border-box;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #6B3FA0;
-  border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #FF6A00;
-}
-
-/* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom font sizing */
-@layer base {
-  h1 {
-    @apply text-display-xl font-serif font-bold tracking-tight;
-  }
-  h2 {
-    @apply text-display-lg font-serif font-bold tracking-tight;
-  }
-  h3 {
-    @apply text-display font-serif font-bold;
-  }
-  p {
-    @apply text-base leading-relaxed;
-  }
+body {
+  margin: 0;
+  background: #0B1020;
+  color: #F8F8F8;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Utility animations */
-@layer components {
-  .animate-in {
-    @apply animate-fade-in;
-  }
-
-  .text-gradient {
-    @apply bg-gradient-to-r from-electric-purple via-bright-orange to-electric-purple bg-clip-text text-transparent;
-  }
-
-  .card-hover {
-    @apply transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-2xl;
-  }
+::selection {
+  background: #FF6A00;
+  color: #0B1020;
 }
