@@ -1,11 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    domains: ['images.unsplash.com', 'cdn.sanity.io'],
-  },
-  experimental: {
-    optimizePackageImports: ['framer-motion'],
-  },
-}
+const nextConfig = {};
 
-export default nextConfig
+export default nextConfig;
