@@ -129,7 +129,7 @@ export default function Home() {
                 {projects.slice(0, 4).map((project, index) => (
                   <a
                     key={project.title}
-                    href={`#${project.title.toLowerCase().replaceAll(" ", "-")}`}
+                    href={`#${project.title.toLowerCase().replace(/\s+/g, "-")}`}
                     className={`group rounded-3xl p-5 min-h-[170px] flex flex-col justify-between transition hover:scale-[1.03] ${
                       index === 0
                         ? "bg-[#FF6A00] text-[#0B1020]"
