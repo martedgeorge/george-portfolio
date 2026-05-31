@@ -2,27 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #0B1020;
-  --foreground: #F8F8F8;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  background: #0B1020;
-  color: #F8F8F8;
+  background: #090A12;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-::selection {
-  background: #FF6A00;
-  color: #0B1020;
 }
